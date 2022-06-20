@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FlataBeer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script defer type="text/javascript" src="src/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>FlataBeer</h1>
+      <nav>
+        <ul id="beer-list">
+          <li>Beer Name</li>
+          <li>Another Beer Name</li>
+          <li>And Another Beer Name</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="beer-details">
+        <h2 id="beer-name">Beer Name Goes Here</h2>
+        <img
+          id="beer-image"
+          alt="Beer Name Goes Here"
+          src="assets/image-placeholder.jpg"
+        />
+        <p>
+          <em id="beer-description">Beer Description Goes Here</em>
+        </p>
+
+        <form id="description-form">
+          <label for="description">Edited Description:</label>
+          <textarea id="description"></textarea>
+          <button type="submit">Update Beer</button>
+        </form>
+
+        <h3>Customer Reviews</h3>
+        <ul id="review-list">
+          <li>Replace with actual reviews</li>
+          <li>From the server</li>
+        </ul>
+        <form id="review-form">
+          <label for="review">Your Review:</label>
+          <textarea id="review"></textarea>
+          <button type="submit">Add review</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
