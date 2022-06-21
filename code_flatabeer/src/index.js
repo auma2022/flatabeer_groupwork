@@ -42,7 +42,7 @@ const updateDescription = ()=> {
       event.preventDefault();
       const updatedDescription = document.querySelector("#beer-description");
       updatedDescription.textContent = description.value;
-      //descriptionForm.reset()
+      descriptionForm.reset()
     })
     doPatch();
   }
