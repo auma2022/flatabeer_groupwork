@@ -4,7 +4,9 @@ const beerDescription = document.getElementById('beer-description');
 const beerReviews = document.getElementById('review-list');
 const beerList = document.getElementById('beer-list')
 
-const url = 'http://localhost:3000/beers';
+const url = 'http://localhost:3000/beers'
+
+//beerList.addEventListener("load",()=>)
 
 fetch(url).then((response) => response.json())
     .then(beers => {
@@ -28,4 +30,5 @@ document.querySelector('#review-form').addEventListener('submit', (e) => {
     let listReveiw = document.createElement('li');
     listReveiw.innerText = text.value;
     beerReviews.appendChild(listReveiw);
+    document.querySelector('#review-form').reset();
 })
